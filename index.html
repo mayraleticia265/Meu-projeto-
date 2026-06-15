@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DoramaLife</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1> DoramaLife</h1>
+    <p>Lições e Inspirações dos Doramas</p>
+</header>
+
+<nav>
+    <a href="#">Início</a>
+    <a href="#">Catálogo</a>
+    <a href="#">Recomendações</a>
+    <a href="#">Sobre</a>
+</nav>
+
+<main>
+
+<section>
+    <h2>Bem-vindo ao DoramaLife</h2>
+    <p>
+        Descubra histórias emocionantes, mensagens inspiradoras
+        e valores transmitidos pelos doramas.
+    </p>
+</section>
+
+<section>
+    <h2>Catálogo de Doramas</h2>
+
+    <article>
+        <img src="https://cademeuchapeu.com/wp-content/uploads/2025/06/BELEZA-VERDADEIRA.jpg" alt="True Beauty">
+        <h3>True Beauty</h3>
+        <p>Romance e Comédia</p>
+        <p>Uma história sobre autoestima e amizade.</p>
+    </article>
+
+    <article>
+        <img src="https://recreio.com.br/wp-content/uploads/2025/07/goblin-capa.jpg" alt="Goblin">
+        <h3>Goblin</h3>
+        <p>Fantasia e Romance</p>
+        <p>Uma emocionante jornada sobre amor e destino.</p>
+    </article>
+
+    <article>
+        <img src="https://upload.wikimedia.org/wikipedia/pt/f/fe/Crash_Landing_on_You_poster.jpg" alt="Crash Landing On You">
+        <h3>Crash Landing On You</h3>
+        <p>Romance e Drama</p>
+        <p>Um romance inesperado entre duas realidades.</p>
+    </article>
+
+</section>
+
+<section>
+    <h2>Recomendações</h2>
+
+    <article>
+        <h3>Business Proposal</h3>
+        <p>Indicado para quem gosta de romance e comédia.</p>
+    </article>
+
+    <article>
+        <h3>Vincenzo</h3>
+        <p>Indicado para quem gosta de ação e suspense.</p>
+    </article>
+</section>
+
+<section>
+    <h2>Frase Inspiradora</h2>
+
+    <section>
+    <h2>Frase Inspiradora</h2>
+
+    <p id="frase">
+        Clique no botão para ver uma frase inspiradora.
+    </p>
+
+    <br>
+
+    <button onclick="trocarFrase()">
+        Nova Frase
+    </button>
+
+</main>
+
+<footer>
+    <p>Projeto Web - DoramaLife © 2026</p>
+</footer>
+
+<script>
+function trocarFrase() {
+
+    const frases = [
+        "A perseverança transforma desafios em conquistas.",
+        "Cada dia é uma nova oportunidade para crescer.",
+        "A amizade verdadeira supera qualquer obstáculo.",
+        "Os doramas nos mostram que sempre há esperança.",
+        "Grandes histórias começam com pequenos passos.",
+        "Acredite em si mesmo e siga em frente.",
+        "Os desafios fazem parte do caminho para o sucesso."
+    ];
+
+    let sorteio = Math.floor(Math.random() * frases.length);
+
+    document.getElementById("frase").innerText = frases[sorteio];
+}
+</script>
+
+</body>
+</html>
