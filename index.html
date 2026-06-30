@@ -1,92 +1,363 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DoramaLife</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoramaLife</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
 <header>
-    <h1> DoramaLife</h1>
-    <p>Lições e Inspirações dos Doramas</p>
+
+    <h1>DoramaLife</h1>
+
+    <p>
+        Descubra os melhores doramas, romances inesquecíveis e histórias que emocionam milhões de fãs.
+    </p>
+
+    <section class="botoes-banner">
+
+        <button class="btn-principal">
+             Explorar Catálogo
+        </button>
+
+        <button class="btn-secundario">
+             Em Alta
+        </button>
+
+    </section>
+
 </header>
+<section class="estatisticas">
+
+    <article>
+
+        <h2>50+</h2>
+
+        <p>Doramas</p>
+
+    </article>
+
+    <article>
+
+        <h2>15+</h2>
+
+        <p>Gêneros</p>
+
+    </article>
+
+    <article>
+
+        <h2>2000+</h2>
+
+        <p>Fãs</p>
+
+    </article>
+
+    <article>
+
+        <h2>9.5</h2>
+
+        <p>Avaliação Média</p>
+
+    </article>
+
+</section>
 
 <nav>
-    <a href="#">Início</a>
-    <a href="#">Catálogo</a>
-    <a href="#">Recomendações</a>
-    <a href="#">Frase Inspiradora</a>
+
+    <a href="#inicio">Início</a>
+
+    <a href="#alta">Em Alta</a>
+
+    <a href="#catalogo">Catálogo</a>
+
+    <a href="#recomendacoes">Recomendações</a>
+
+    <a href="#frases">Frases</a>
+
+    <a href="#contato">Contato</a>
+
 </nav>
 
 <main>
 
-<section>
-    <h2>Bem-vindo ao DoramaLife</h2>
+<section id="inicio" class="banner">
+
+    <h2>Descubra histórias que emocionam</h2>
+
     <p>
-        Descubra histórias emocionantes, mensagens inspiradoras
-        e valores transmitidos pelos doramas.
+        Romance, amizade, ação, fantasia e muitas emoções
+        em um único lugar.
     </p>
+
+    <button>Explorar Catálogo</button>
+
+</section>
+
+<section class="pesquisa">
+
+    <h2>Pesquisar Dorama</h2>
+
+    <input
+        type="search"
+        id="pesquisar"
+        placeholder="Pesquise um dorama...">
+
+</section>
+
+<section id="alta">
+
+    <h2> Em Alta</h2>
+
+    <div class="cards">
+
+        <article class="card">
+
+            <img src="https://m.media-amazon.com/images/M/MV5BZTFlNWFiNGQtNjA3Zi00ODNmLTgyNWQtODk4ZGQ2OWZjZjAxXkEyXkFqcGc@._V1_QL75_UY281_CR4,0,190,281_.jpg" alt="True Beauty">
+
+            <h3>True Beauty</h3>
+
+            <p> 9.0</p>
+
+            <p>Romance • Comédia</p>
+
+            <button>Ver detalhes</button>
+
+        </article>
+
+        <article class="card">
+
+            <img src="https://m.media-amazon.com/images/M/MV5BNWIyNTA3MmItNzY5ZS00NmZhLThjMWYtZjIxYzllZWU5YWIzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Goblin">
+
+            <h3>Goblin</h3>
+
+            <p> 9.5</p>
+
+            <p>Fantasia • Romance</p>
+
+            <button>Ver detalhes</button>
+
+        </article>
+
+        <article class="card">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQq_mpJsm9KwnM1DDTVuODkvcHZR3OrmW6q91026isFu29n30TjVveVqaBEl6B-C7Hj40wxTzgAZf9ubsaEd21fHGV9eU8ZPLSLKxKxQ&s=10" alt="Crash Landing On You">
+
+            <h3>Crash Landing On You</h3>
+
+            <p> 9.3</p>
+
+            <p>Romance • Drama</p>
+
+            <button>Ver detalhes</button>
+
+        </article>
+
+    </div>
+
+</section>
+
+<section id="categorias">
+
+    <h2> Categorias</h2>
+
+    <div class="categorias">
+
+        <button> Romance</button>
+
+        <button> Comédia</button>
+
+        <button> Ação</button>
+
+        <button> Fantasia</button>
+
+        <button> Drama</button>
+
+        <button> Escolar</button>
+
+    </div>
+
 </section>
 
 <section id="catalogo">
-    <h2>Catálogo de Doramas</h2>
 
-    <article>
-        <img src="https://cademeuchapeu.com/wp-content/uploads/2025/06/BELEZA-VERDADEIRA.jpg" alt="True Beauty">
-        <h3>True Beauty</h3>
-        <p>Romance e Comédia</p>
-        <p>Uma história sobre autoestima e amizade.</p>
-    </article>
+    <h2> Catálogo de Doramas</h2>
 
-    <article>
-        <img src="https://recreio.com.br/wp-content/uploads/2025/07/goblin-capa.jpg" alt="Goblin">
-        <h3>Goblin</h3>
-        <p>Fantasia e Romance</p>
-        <p>Uma emocionante jornada sobre amor e destino.</p>
-    </article>
+    <div class="cards">
 
-    <article>
-        <img src="https://upload.wikimedia.org/wikipedia/pt/f/fe/Crash_Landing_on_You_poster.jpg" alt="Crash Landing On You">
-        <h3>Crash Landing On You</h3>
-        <p>Romance e Drama</p>
-        <p>Um romance inesperado entre duas realidades.</p>
-    </article>
+        <article class="card">
+
+            <img src="https://m.media-amazon.com/images/M/MV5BYWM2NTM4MTktNDFiNi00NTI3LThiZTgtZmJiZTQ2NzdhNDE3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Business Proposal">
+
+            <h3>Business Proposal</h3>
+
+            <p> 9.1</p>
+
+            <p>2022 • 12 episódios</p>
+
+            <p>Romance • Comédia</p>
+
+            <button>Ver detalhes</button>
+
+        </article>
+
+        <article class="card">
+
+            <img src="https://m.media-amazon.com/images/M/MV5BNjA1YmJiNTMtMDc4OC00ZjlkLTgyMjctYzRmMWJhMmZhMjkyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Vincenzo">
+
+            <h3>Vincenzo</h3>
+
+            <p> 9.4</p>
+
+            <p>2021 • 20 episódios</p>
+
+            <p>Ação • Suspense</p>
+
+            <button>Ver detalhes</button>
+
+        </article>
+
+        <article class="card">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxlPm1O0uSOIwF7pecZWQR2PBRnRFB4cjDGcuzrm7WPFHRCEMxdmmF1fW7&s=10" alt="Queen of Tears">
+
+            <h3>Queen of Tears</h3>
+
+            <p> 9.5</p>
+
+            <p>2024 • 16 episódios</p>
+
+            <p>Romance • Drama</p>
+
+            <button>Ver detalhes</button>
+
+        </article>
+
+        <article class="card">
+
+            <img src="https://m.media-amazon.com/images/M/MV5BMzQzMDVlM2QtMjcxMC00ZjYzLWFmMWYtOTBhMjQzMTg3ZTMyXkEyXkFqcGc@._V1_.jpg" alt="Lovely Runner">
+
+            <h3>Lovely Runner</h3>
+
+            <p> 9.6</p>
+
+            <p>2024 • 16 episódios</p>
+
+            <p>Romance • Fantasia</p>
+
+            <button>Ver detalhes</button>
+
+        </article>
+
+        <article class="card">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoX1pL5mKQ-B-F_OhN4WuH1FPzsMWieAQ-bZd8fbkAcfXHEvQLG-c-gyOs&s=10" alt="Hometown Cha-Cha-Cha">
+
+            <h3>Hometown Cha-Cha-Cha</h3>
+
+            <p> 9.2</p>
+
+            <p>2021 • 16 episódios</p>
+
+            <p>Romance</p>
+
+            <button>Ver detalhes</button>
+
+        </article>
+
+        <article class="card">
+
+            <img src="https://m.media-amazon.com/images/M/MV5BZmFmYTU0YTItZTk4ZS00ZWMzLThmOTgtOGIyOTBkY2QwZjc0XkEyXkFqcGc@._V1_QL75_UX190_CR0,2,190,281_.jpg" alt="Hotel Del Luna">
+
+            <h3>Hotel Del Luna</h3>
+
+            <p> 9.3</p>
+
+            <p>2019 • 16 episódios</p>
+
+            <p>Fantasia • Romance</p>
+
+            <button>Ver detalhes</button>
+
+        </article>
+
+    </div>
+
 </section>
 
-<section>
-    <h2>Recomendações</h2>
+<section id="recomendacoes">
+
+    <h2> Recomendações</h2>
 
     <article>
-        <h3>Business Proposal</h3>
-        <p>Indicado para quem gosta de romance e comédia.</p>
+
+        <h3>Para quem ama romance</h3>
+
+        <p>True Beauty, Lovely Runner e Hometown Cha-Cha-Cha.</p>
+
     </article>
 
     <article>
-        <h3>Vincenzo</h3>
-        <p>Indicado para quem gosta de ação e suspense.</p>
+
+        <h3>Para quem gosta de ação</h3>
+
+        <p>Vincenzo e Goblin.</p>
+
     </article>
+
 </section>
 
-    <section>
-    <h2>Frase Inspiradora</h2>
+<section id="frases">
+
+    <h2> Frase Inspiradora</h2>
 
     <p id="frase">
-        Clique no botão para ver uma frase inspiradora.
+        Clique no botão para descobrir uma nova frase.
     </p>
-
-    <br>
 
     <button onclick="trocarFrase()">
         Nova Frase
     </button>
 
+</section>
+
+<section id="contato">
+
+    <h2> Receba Novidades</h2>
+
+    <p>
+        Cadastre seu e-mail para receber recomendações de novos doramas.
+    </p>
+
+    <input type="email" placeholder="Digite seu e-mail">
+
+    <button>Inscrever-se</button>
+
+</section>
+
 </main>
 
 <footer>
-    <p>Projeto Web - DoramaLife © 2026</p>
+
+    <h3>DoramaLife</h3>
+
+    <p>
+        O melhor catálogo de doramas para quem ama histórias emocionantes.
+    </p>
+
+    <p>© 2026 - Todos os direitos reservados.</p>
+
 </footer>
-<script src="./script.js"></script>
+
+<script src="script.js"></script>
+
 </body>
+
 </html>
